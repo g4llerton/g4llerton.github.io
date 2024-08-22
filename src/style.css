@@ -4,7 +4,6 @@ html, body {
   height: 100%;
   width: 100%;
   font-size: 1.75em;
-  font-family: Palatino, Georgia, serif;
 }
 body, #app {
   display: flex;
@@ -37,5 +36,5 @@ body, #app {
 #clock,
 #input,
 #message {
-  font-family: "Helvetica Neue", Roboto, sans-serif;
+  font-family: Palatino, Georgia, serif;
 }
