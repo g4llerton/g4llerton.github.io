@@ -4,7 +4,7 @@ import './style.css';
 // Default config
 let CONFIG = {
   defaultCommand: 'g',
-  bgColor: '#282828',
+  bgColor: '#ffffff',
   textColor: '#ebdbb2',
   fontSize: '1.75em',
   clockSize: '2em',
