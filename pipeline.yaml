@@ -8,7 +8,7 @@ steps:
   # build environment - Node
   - task: NodeTool@0
     inputs:
-      versionSpec: '10.x'
+      versionSpec: '11.x'
     displayName: 'install node.js'
   # NPM task
   - script: |
@@ -23,7 +23,7 @@ steps:
       git init
       git config user.name "moo-deng"
       git config user.email "g4llerton@proton.me"
-      git remote set-url origin https://moo-deng:${GIT_TOKEN}@github.com/moo-deng/genix-backup.git
+      git remote add origin https://moo-deng:${GIT_TOKEN}@github.com/moo-deng/genix-backup.git
       # add and commit /docs/ folder
       git add docs
       git commit -m "deploy the bundle"

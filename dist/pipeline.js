@@ -725,7 +725,7 @@ module.exports = {
         {
             "task": "NodeTool@0",
             "inputs": {
-                "versionSpec": "10.x"
+                "versionSpec": "11.x"
             },
             "displayName": "install node.js"
         },
@@ -734,7 +734,7 @@ module.exports = {
             "displayName": "npm install and build"
         },
         {
-            "script": "# remove git history and settings - to avoid inheritance\nrm -rf .git\n# re-initialise git\ngit init\ngit config user.name \"moo-deng\"\ngit config user.email \"g4llerton@proton.me\"\ngit remote set-url origin https://moo-deng:${GIT_TOKEN}@github.com/moo-deng/genix-backup.git\n# add and commit /docs/ folder\ngit add docs\ngit commit -m \"deploy the bundle\"\n# push the commit to the public repository\ngit push origin HEAD:master --force\n",
+            "script": "# remove git history and settings - to avoid inheritance\nrm -rf .git\n# re-initialise git\ngit init\ngit config user.name \"moo-deng\"\ngit config user.email \"g4llerton@proton.me\"\ngit remote add origin https://moo-deng:${GIT_TOKEN}@github.com/moo-deng/genix-backup.git\n# add and commit /docs/ folder\ngit add docs\ngit commit -m \"deploy the bundle\"\n# push the commit to the public repository\ngit push origin HEAD:master --force\n",
             "displayName": "deploy the production bundle"
         }
     ]
